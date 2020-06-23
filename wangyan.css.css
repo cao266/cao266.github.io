@@ -1,0 +1,172 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+nav{
+	width:100%;
+	height:80px;
+	background: skyblue;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+ul{
+	list-style: none;
+}
+/* 下面是logo区 */
+.logo-baozh{
+	width:300px;
+	height:80px;
+	margin-left: 13%;
+	/* padding-top: 6px; */
+}
+.logo-baozh .logo-img{
+	margin-top: 6px;
+	margin-right: 22px;
+	width:70px;
+	height:70px;
+	display: block;
+	background: url(1.jpg);
+	background-size:100% ;
+	border-radius: 50%;
+	transition: all 2.0s;
+}
+.logo-mp h3{
+	color: #FFFFFF;
+	font-size: 40px;
+	margin-top: 19px;
+}
+.logo-mp p{
+	color: #FFFFFF;
+}
+/* 这里是导航区 */
+.dao{
+	
+	width: 40%;
+	height:30px;
+	padding-top: 37px;
+}
+.dao ul li a{
+	margin: 0 37px;
+	font-size: 21px;
+	text-decoration: none;
+	color: #fff;
+}
+.dao ul li a:hover{
+	color: #000000;
+}
+.mipian{
+	width: 240px;
+	height: 30px;
+	margin-top:22px;
+	color: #fff;
+}
+.logo-baozh .logo-img:hover{
+	transform: rotate(360deg);
+}
+/* 下面是网页主图 */
+.content{
+	width: 100%;
+	height: 500px;
+	background: #0000FF;
+	position: relative;
+	overflow: hidden;
+}
+#box {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			background: #FFC0CB;
+			transform: translate(-50%,-50%);
+			animation: bcolor 24s linear infinite;
+		}
+		#warp {
+			position: relative;
+			width: 300px;
+			height: 300px;
+			animation: brotate 60s linear infinite;
+		}
+		#box #warp:nth-child(1){
+			top: 18%;
+			left: 25%;
+		}
+		#box #warp:nth-child(2){
+			top: -34%;
+			left: 30%;
+		}
+		#box #warp:nth-child(3){
+			top: -86%;
+			left: 35%;
+		}
+		#warp div {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			box-sizing: border-box;
+		}
+		#warp div:nth-child(3){
+			border: 2px solid skyblue;
+		}
+		
+		#warp div:nth-child(1){
+			width: 500%;
+			top: -191%;
+			left: -461%;
+			transform: rotate(45deg);
+			border-top: 2px solid skyblue;
+		}
+		#warp div:nth-child(2){
+			width: 500%;
+			top: -191%;
+			left: 61%;
+			transform: rotate(-45deg);
+			border-top: 2px solid skyblue;
+		}
+		#warp div:nth-child(4){
+			width: 500%;
+			top: 261%;
+			left: -9%;
+			transform: rotate(45deg);
+			border-top: 2px solid skyblue;
+		}
+		#warp div:nth-child(5){
+			width: 500%;
+			top: 261%;
+			left: -391%;
+			transform: rotate(-45deg);
+			border-top: 2px solid skyblue;
+		}
+		@keyframes brotate{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(360deg);}
+		}
+		@keyframes bcolor{
+			0%,100% {background: darkcyan;}
+			25% {background: slateblue;}
+			50% {background: darkslateblue;}
+			75% {background: darkred;}
+		}
+		/* 下面是内容部分 */
+		img{
+			width: 22%;
+			height: 200px;
+		}
+.bke{
+	float: right;
+	width: 78%;
+	height: 200px;
+	background: url(23.jpg);
+}
+
+ .bke .41{
+position: absolute;
+margin-top:100px;	
+}
+.bke .bo{
+	margin-left: 20px;
+}
